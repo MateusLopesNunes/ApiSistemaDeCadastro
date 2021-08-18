@@ -33,7 +33,6 @@ public class UserController {
 	}
 	
 	@PostMapping
-	@ResponseStatus(HttpStatus.CREATED)
 	public String createUser(@RequestBody @Valid UserDto obj) {
 		return userService.createUser(obj);
 	}

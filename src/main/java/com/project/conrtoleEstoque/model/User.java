@@ -37,19 +37,16 @@ public class User implements Serializable {
 	
 	@Column(nullable = false, unique = true)
 	private String cpf;
-	
-	private LocalDate birthDate;
-	
+		
 	public User() {
 	}
 
-	public User(String name, String login, String senha, String email, String cpf, LocalDate birthDate) {
+	public User(String name, String login, String senha, String email, String cpf) {
 		this.name = name;
 		this.login = login;
 		this.senha = senha;
 		this.email = email;
 		this.cpf = cpf;
-		this.birthDate = birthDate;
 	}
 
 	//---------------Getters and Setters---------------
@@ -101,15 +98,4 @@ public class User implements Serializable {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
-	public LocalDate getBirthDate() {
-		return birthDate;
-	}
-
-	public void setBirthDate(LocalDate birthDate) {
-		this.birthDate = birthDate;
-	}
-	
-	
-
 }

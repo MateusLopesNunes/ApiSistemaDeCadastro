@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.titulo{
+    margin-left: 265pt;
+    margin-top: 10pt;
+}
+
+.titulo h1 {
+    font-size: 30pt;
+}
+
+.conteiner {
+    display: flex;
+}
+
+.formulario {
+    width: 700pt;
+    height: 100pt;
+    margin: auto;
+    margin-top: 20pt;
+    border-radius: 4pt;
+}
+
+.tableConteiner {
+	width: 780pt;
+	height: 270pt;
+	overflow-y: auto;
+	margin: auto;
+}
+
+.div1 {
+    margin-top: 10pt;
+    margin-left: 23pt;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    border-radius: 3pt;
+}
+
+.div2 {
+    margin-top: 10pt;
+    margin-left: 80pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div1 label, input {
+    border: 0;
+    border-radius: 3pt;
+    margin-top: 8pt;
+}
+
+#id {
+	margin-left: 32pt;
+}
+
+#name {
+    margin-left: 10pt;
+}
+
+#email {
+    margin-left: 12pt;
+}
+
+.div2 label, input {
+    border: 0;
+    border-radius: 3pt;
+    margin-top: 8pt;
+}
+
+#login {
+    margin-left: 33.5pt;
+}
+
+#cpf {
+    margin-left: 44pt;
+}
+
+#password {
+    margin-left: 10pt;
+}
+
+input {
+    height: 15pt;
+    border: 1px #999 solid;
+}
+
+#form {
+    display: flex;
+}
+
+.div3{
+    margin-top: 25pt;
+    margin-left: 60pt;
+}
+
+#button {
+	background-color: #0d6efd;
+	border-color: #0d6efd;
+	color: #fff;
+	padding: 0;
+    width: 90px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+#button:hover {
+    background-color: rgb(0, 103, 206);
+    transition: 0.25s;
+}
+
+#buttonUpdate {
+	background-color: #198754;
+	border-color: #198754;
+	color: #fff;
+	padding: 0;
+    width: 90px;
+    height: 35px;
+}
+
+#buttonUpdate:hover {
+    background-color: #147447;
+    transition: 0.25s;
+}
+
+.tableConteiner {
+    margin: 20pt;
+}
+
+#buttonEdit {
+	background-color: #198754;
+	border-color: #198754;
+	color: #fff;
+	height: 37px;
+	border-radius: 2pt;
+}
+
+#buttonEdit:hover {
+ 	background-color: #147447;
+    transition: 0.25s;
+}
+
+#buttonDelete {
+	background-color: #dc3545;
+	border-color: #dc3545;
+	color: #fff;
+	margin-left: 7pt;
+	border-radius: 2pt;
+	height: 37px;
+}
+
+#buttonDelete:hover {
+	background-color: #ac2b38;
+    transition: 0.25s;
+}

@@ -39,20 +39,17 @@ public class UserDto {
 	@NotEmpty
 	@CPF
 	private String cpf;
-
-	private String birthDate;
 	
 	public UserDto() {
 	}
 
-	public UserDto(Long id, String name, String login, String senha, String email, String cpf, String birthDate) {
+	public UserDto(Long id, String name, String login, String senha, String email, String cpf) {
 		this.id = id;
 		this.name = name;
 		this.login = login;
 		this.senha = senha;
 		this.email = email;
 		this.cpf = cpf;
-		this.birthDate = birthDate;
 	}
 
 	public String getName() {
@@ -94,33 +91,14 @@ public class UserDto {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
-	public String getBirthDate() {
-		return birthDate;
-	}
-
-	public void setBirthDate(String birthDate) {
-		this.birthDate = birthDate;
-	}
 	
 	public User dtoToModel() {
-		return new User(name, login, senha, email, cpf, LocalDate.parse(birthDate, dtf));
+		return new User(name, login, senha, email, cpf);
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(login, name);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		UserDto other = (UserDto) obj;
-		return Objects.equals(login, other.login) && Objects.equals(name, other.name);
+	public UserDto(@NotEmpty @Size(min = 5, max = 80) String login, @NotEmpty @Size(min = 8, max = 50) String senha) {
+		super();
+		this.login = login;
+		this.senha = senha;
 	}
 }
